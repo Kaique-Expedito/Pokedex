@@ -1,0 +1,8 @@
+-- Configuração do GIT
+git config --global user.name Kaique-Expedito
+git config --global user.email kaiqueexpeditodasilva12@gmail.com
+
+-- Abrir o Terminal -ctrl +'
+dotnet new mvc -o Pokedex
+cd Pokedex
+
