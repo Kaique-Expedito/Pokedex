@@ -3,6 +3,10 @@ git config --global user.name Kaique-Expedito
 git config --global user.email kaiqueexpeditodasilva12@gmail.com
 
 -- Abrir o Terminal -ctrl +'
+dotnet new gitignore
 dotnet new mvc -o Pokedex
 cd Pokedex
 
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.8
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 9.0.0

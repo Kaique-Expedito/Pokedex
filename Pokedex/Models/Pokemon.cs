@@ -27,8 +27,19 @@ namespace Pokedex.Models;
         
         public string Descricao { get; set; }
 
+         [Column(TypeName = "double(5,2)")]
+        [Required(ErrorMessage = "Por favor, informe a altura")]
+        public double Altura { get; set; }
 
          [Column(TypeName = "double(7,3)")]
         [Required(ErrorMessage = "Por favor, informe o peso")]
-        public double Altura { get; set; }
-    }
+        public double Peso { get; set; }
+
+        [StringLength(200)]
+        public string Imagem { get; set; }
+
+        [StringLength(400)]
+        public String Animacao { get; set; }
+
+    public ICollection<PokemonTipo> Tipos { get; set; }
+}
