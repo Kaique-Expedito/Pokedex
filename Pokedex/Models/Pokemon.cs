@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Pokedex.Models;
@@ -6,6 +7,7 @@ namespace Pokedex.Models;
     public class Pokemon
     {
         [Key]
+        [Display(Name = "Número", Prompt="Informe o Número")]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public uint Numero { get; set; }
 
